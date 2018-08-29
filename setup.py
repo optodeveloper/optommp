@@ -4,8 +4,12 @@ setup(name='optommp',
         version='0.1',
         description='Python toolkit for Opto 22 memory-mapped devices',
         url='http://github.com/OPTO-torchard/optommp',
-        license='MIT',
+        license='mit',
         author='Opto 22',
         author_email='torchard@opto22.com',
         packages=['optommp'],
-        zip_safe=False)
+        zip_safe=False,
+        classifiers=[
+            'License :: OSI Approved :: MIT License',
+            'Programming Language :: Python :: 2.7'
+            ])

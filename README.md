@@ -1,8 +1,8 @@
 # optommp
 
-Python toolkit to access data on Opto memory-mapped devices, specifically written for use with the groov EPIC PR1 processor.
+Python toolkit to access data on Opto memory-mapped devices, specifically written for use with the _groov_ EPIC PR1 processor.
 
-See OptoMMP Protocol Guide (form 1465) for details.
+See [OptoMMP Protocol Guide](https://www.opto22.com/support/resources-tools/documents/1465-optommp-protocol-guide "opto22 support") (form 1465) for details.
 
 written by __Terry Orchard__.
 

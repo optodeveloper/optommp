@@ -1,6 +1,6 @@
 # optommp
 
-Python toolkit to access data on Opto memory-mapped devices, specifically written for use with the _groov_ EPIC PR1 processor. See [OptoMMP Protocol Guide](https://www.opto22.com/support/resources-tools/documents/1465-optommp-protocol-guide "opto22 support") (form 1465) for details.
+Python toolkit to access data on Opto 22 _groov_ EPIC using the OptoMMP protocol. See [OptoMMP Protocol Guide](https://www.opto22.com/support/resources-tools/documents/1465-optommp-protocol-guide "opto22 support") (form 1465) and the Opto 22 [developer site for more details](http://developer.opto22.com/). Hosted on the [Python Package Index (PyPI)](https://pypi.org/project/optommp/).
 
 To use this package do `sudo pip install optommp` to get the package from PyPI, `import optommp` at the top of your \*.py Python script, and then use the following functions to interface with your device(s):
 

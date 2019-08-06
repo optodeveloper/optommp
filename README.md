@@ -49,17 +49,17 @@ To use this package do `sudo pip install optommp` to get the package from PyPI, 
 </details>
 <details><summary>ScratchPad Area Access Functions</summary>
 
-* **GetScractchPadIntegerArea(index)** - Returns the `index`<sup>th</sup> scratch pad integer.
+* **GetScratchPadIntegerArea(index)** - Returns the `index`<sup>th</sup> scratch pad integer.
 
-* **SetScractchPadIntegerArea(index, value)** - Sets the `index`<sup>th</sup> scratch pad integer to be `value`.
+* **SetScratchPadIntegerArea(index, value)** - Sets the `index`<sup>th</sup> scratch pad integer to be `value`.
 
-* **GetScractchPadFloatArea(index)** - Returns the `index`<sup>th</sup> scratch pad float.
+* **GetScratchPadFloatArea(index)** - Returns the `index`<sup>th</sup> scratch pad float.
 
-* **SetScractchPadFloatArea(index, value)** - Sets the `index`<sup>th</sup> scratch pad float to be `value`.
+* **SetScratchPadFloatArea(index, value)** - Sets the `index`<sup>th</sup> scratch pad float to be `value`.
 
-* **GetScractchPadStringArea(index)** - Returns the `index`<sup>th</sup> scratch pad string.
+* **GetScratchPadStringArea(index)** - Returns the `index`<sup>th</sup> scratch pad string.
 
-* **SetScractchPadStringArea(index, data)** - Sets the `index`<sup>th</sup> scratch pad string to be `data`.
+* **SetScratchPadStringArea(index, data)** - Sets the `index`<sup>th</sup> scratch pad string to be `data`.
 
 </details>
 <details><summary>Internal Memory-Map Functions</summary>

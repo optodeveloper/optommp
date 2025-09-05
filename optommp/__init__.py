@@ -1,4 +1,5 @@
-import O22SIOUT
+from optommp import O22SIOUT
+
 import sys
 import struct
 import socket

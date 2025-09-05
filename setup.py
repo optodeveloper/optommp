@@ -13,5 +13,5 @@ setup(name='optommp',
         zip_safe=False,
         classifiers=[
             'License :: OSI Approved :: MIT License',
-            'Programming Language :: Python :: 3.x'
+            'Programming Language :: Python :: 3.10'
             ])

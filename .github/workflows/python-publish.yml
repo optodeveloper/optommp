@@ -26,6 +26,11 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Debug version
+        run: |
+          python setup.py --version
+          cat optommp/__init__.py | grep __version__
+
       - name: Build release distributions
         run: |
           # NOTE: put your own distribution build steps here.

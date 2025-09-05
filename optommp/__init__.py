@@ -1,3 +1,5 @@
+__version__ = "0.5"
+
 from optommp import O22SIOUT
 
 import sys

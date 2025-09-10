@@ -153,10 +153,21 @@ class O22MMP:
         offset = O22SIOUT.BASE_SCRATCHPAD_STRING + loc
         sizeData = self.ReadBlock(offset+0x01, 1)
         rawSize = self.UnpackReadResponse(sizeData, 'c')[1:-1]
-        # rawSize is char `c` *or* a hex `/x00` number. Convert to int:
-        size = ord(rawSize) if len(rawSize)==1 else int('0'+rawSize[1:], 16)
+        
+        if isinstance(rawSize, bytes):
+            if len(rawSize) == 1:
+                size = rawSize[0]
+            else:
+                size = int('0' + rawSize[1:].decode('ascii'), 16)
+        else:
+            # rawSize is char `c` *or* a hex `/x00` number. Convert to int:
+            size = ord(rawSize) if len(rawSize)==1 else int('0'+rawSize[1:], 16)
+            
         # Note: string size is at offset + 1, string data is at offset + 2
         data = self.ReadBlock(offset+0x02, size)
+
+        if isinstance(result, bytes):
+            return result.decode('ascii')
         return self.UnpackReadResponse(data, 'NONE')
 
 # SetScratchPadStringArea
